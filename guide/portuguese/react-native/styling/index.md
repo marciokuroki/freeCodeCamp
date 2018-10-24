@@ -2,7 +2,7 @@
 title: Styling
 localeTitle: Styling
 ---
-## Reagir Nativo - Estilo
+## React Native - Estilo
 
 O React Native fornece uma API para criar folhas de estilo e estilizar seus componentes: [StyleSheet](https://facebook.github.io/react-native/docs/stylesheet) .
 
@@ -31,19 +31,19 @@ import React, { Component } from 'react';
  }); 
 ```
 
-Embora as folhas de estilo CSS regulares não sejam válidas, o superconjunto de CSS do React Native é muito semelhante ao CSS tradicional. Muitas propriedades CSS (por exemplo, `color` , `height` , `top` , `right` , `bottom` , `left` ) são as mesmas em StyleSheet. Qualquer propriedade CSS que tenha hifens (por exemplo `font-size` , `background-color` ) deve ser alterada para camelCase (por exemplo, `fontSize` , `backgroundColor` ).
+Embora as folhas de estilo CSS regulares não sejam válidas, o conjunto de CSS do React Native é muito semelhante ao CSS tradicional. Muitas propriedades CSS (por exemplo, `color` , `height` , `top` , `right` , `bottom` , `left` ) são as mesmas em `StyleSheet`. Qualquer propriedade CSS que tenha hífens (por exemplo `font-size` , `background-color` ) deve ser alterada para camelCase (por exemplo, `fontSize` , `backgroundColor` ).
 
-Nem todas as propriedades CSS existem no StyleSheet. Como não existe um conceito verdadeiro de pairar em dispositivos móveis, as propriedades de foco do CSS não existem no React Native. Em vez disso, o React Native fornece [componentes tocáveis](https://facebook.github.io/react-native/docs/handling-touches#touchables) que respondem a eventos de toque.
+Nem todas as propriedades CSS existem no `StyleSheet`. Como não existe um conceito verdadeiro de pairar (_float_) em dispositivos móveis, as propriedades de foco do CSS não existem no React Native. Em vez disso, o React Native fornece [componentes tocáveis](https://facebook.github.io/react-native/docs/handling-touches#touchables) que respondem a eventos de toque.
 
 Os estilos também não são herdados como no CSS tradicional. Na maioria dos casos, você deve declarar o estilo de cada componente.
 
 ### Layouts Flexbox
 
-O Reagir Native usa uma implementação do [flexbox](https://facebook.github.io/react-native/docs/flexbox) semelhante ao padrão da web. Por padrão, os itens na exibição serão configurados para `display: flex` .
+O React Native usa uma implementação do [flexbox](https://facebook.github.io/react-native/docs/flexbox) semelhante ao padrão da web. Por padrão, os itens na exibição serão configurados para `display: flex` .
 
-> Se você não quiser usar o flexbox, também é possível organizar componentes React Native por meio de posicionamento `relative` ou `absolute` .
+> Se você não quiser usar o flexbox, também é possível organizar componentes React Native por meio de posicionamento `relative` ou `absolute`.
 
-Flexbox in React Native defaults para `flexDirection: column` , em vez de `flex-direction: row` (padrão da web). O valor da `column` exibe itens flexíveis verticalmente, que acomodam dispositivos móveis na orientação retrato.
+Flexbox no padrão do React Native utiliza `flexDirection: column`, em vez de `flex-direction: row` (padrão da web). O valor da `column` exibe itens flexíveis verticalmente, que acomodam no dispositivos móveis na orientação retrato.
 
 Para saber mais sobre o flexbox, visite [este guia detalhado sobre CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) e uma abordagem de aprendizagem gamificada com o [Flexbox Froggy](http://flexboxfroggy.com/) .
 
@@ -115,4 +115,4 @@ import React, { Component } from 'react';
 
 ### Bibliotecas para Styling
 
-Existem algumas bibliotecas populares para estilizar o React Native. Alguns deles fornecem recursos semelhantes ao [Bootstrap](../../bootstrap/index.md) , incluindo formulários padrão, estilos de botão e opções de layout de página. Uma das bibliotecas mais populares é o [estilo de componentes](https://github.com/styled-components/styled-components) . Existem muitos outros que você pode encontrar no npm e no GitHub para experimentar por si mesmo.
+Existem algumas bibliotecas populares para estilizar o React Native. Alguns deles fornecem recursos semelhantes ao [Bootstrap](../../bootstrap/index.md), incluindo formulários padrão, estilos de botão e opções de layout de página. Uma das bibliotecas mais populares é o [estilo de componentes](https://github.com/styled-components/styled-components) . Existem muitos outros que você pode encontrar no npm e no GitHub para experimentar por conta própria.
